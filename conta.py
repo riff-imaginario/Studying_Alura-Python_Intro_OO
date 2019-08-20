@@ -16,3 +16,7 @@ def deposita(self, valor):
 
 def saca(self, valor):
     self.saldo -= valor
+
+def transfere(self, valor, destino):
+    self.saca(valor)  # Objeto conta origem
+    destino.saca(valor)  # Objeto conta destino
