@@ -20,3 +20,21 @@ def saca(self, valor):
 def transfere(self, valor, destino):
     self.saca(valor)  # Objeto conta origem
     destino.saca(valor)  # Objeto conta destino
+
+def get_saldo(self):
+    return self.__saldo
+
+def get_titular(self):
+    return self.__titular
+
+def get_limite(self):
+    return self.__limite
+
+def set_limite(self, limite):
+    self.__limite = limite
+
+def set_titular(self, titular):
+    self.__titular = titular
+
+def set_saldo(self, saldo):
+    self.__saldo = saldo
